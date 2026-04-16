@@ -392,7 +392,7 @@ with st.sidebar:
     """)
     
     st.markdown("---")
-    st.caption("💡 Built for internship portfolio")
+    st.caption("💡ML-based telecom churn prediction with real-time insights and interactive dashboard")
 
 # ============================================================================
 # MAIN CONTENT
