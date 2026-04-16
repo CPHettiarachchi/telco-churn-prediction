@@ -18,7 +18,7 @@ telco-churn-prediction/
 
 ---
 
-## 🚀 How to Run the Application
+## How to Run the Application
 
 ### Prerequisites
 - Python 3.8 or higher installed
@@ -45,15 +45,15 @@ pip install -r requirements.txt
 
 ### Step 2: Run the Application
 
-**⚠️ IMPORTANT - Use this exact command:**
+**IMPORTANT - Use this exact command:**
 
 ```bash
 python -m streamlit run app.py
 ```
 
 **DO NOT use:**
-- ❌ `python app.py`
-- ❌ `streamlit run app.py` (may not work on all systems)
+- `python app.py`
+- `streamlit run app.py` (may not work on all systems)
 
 ### Step 3: Access the Application
 
@@ -77,7 +77,7 @@ Open the **Local URL** in your web browser.
 
 ## How the Machine Learning Works
 
-### 1️⃣ Data Preprocessing Pipeline
+### 1️ Data Preprocessing Pipeline
 
 #### Problem: Raw data cannot be directly used for ML models
 
@@ -145,7 +145,7 @@ X_scaled = scaler.fit_transform(X)
 
 ---
 
-### 2️⃣ Model Training
+### 2️ Model Training
 
 #### Logistic Regression (Baseline Model)
 - **Type:** Linear classification model
@@ -176,7 +176,7 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 
 ---
 
-### 3️⃣ Making Predictions
+### 3️ Making Predictions
 
 When a user inputs new customer data:
 
@@ -221,7 +221,7 @@ input_encoded = input_encoded[training_features]
 input_scaled = scaler.transform(input_encoded)
 ```
 
-**⚠️ IMPORTANT:** Use `transform()` not `fit_transform()`
+**IMPORTANT:** Use `transform()` not `fit_transform()`
 - `fit_transform()`: Calculates mean/std from data (training only)
 - `transform()`: Uses pre-calculated mean/std (prediction)
 
@@ -376,7 +376,7 @@ probability = model.predict_proba(input_scaled)[0][1]  # 0.0 to 1.0
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 ### 1. Advanced Models
 **XGBoost Implementation:**
