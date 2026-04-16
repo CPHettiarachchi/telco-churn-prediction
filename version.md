@@ -1,14 +1,14 @@
-# 🎯 Version 2.0 Updates - Enhanced Churn Prediction System
+# Version 2.0 Updates - Enhanced Churn Prediction System
 
-## 🚀 What's New?
+## What's New?
 
-### ✅ Fixed Issues
+### Fixed Issues
 
-1. **Form Submit Button Warning** - FIXED ✅
+1. **Form Submit Button Warning** - FIXED 
    - Added proper `st.form_submit_button()` to the prediction form
    - No more Streamlit warnings about missing submit buttons
 
-2. **String to Float Conversion Error** - FIXED ✅
+2. **String to Float Conversion Error** - FIXED 
    ```python
    # Old code (caused errors):
    min_val = float(df[col].min())
@@ -20,11 +20,11 @@
    - Properly converts TotalCharges column that may have empty strings
    - Uses `pd.to_numeric()` with error coercion
 
-### 🤖 New Machine Learning Models
+### New Machine Learning Models
 
 **Added 4 New Models** (Total now: 6 models!)
 
-1. **Gradient Boosting** ⭐ RECOMMENDED
+1. **Gradient Boosting** RECOMMENDED
    - Best accuracy: ~82-85%
    - Sequential learning from mistakes
    - Great for imbalanced data
@@ -67,9 +67,9 @@
    ```
    - Accuracy: ~79-81%
 
-### 📊 New Features
+### New Features
 
-#### 1. Model Comparison Tool 🏆
+#### 1. Model Comparison Tool
 ```
 Click "Compare All Models" to:
 - Train all 6 models automatically
@@ -90,7 +90,7 @@ Decision Tree            78.12%      0.798
 Naive Bayes             76.89%      0.785
 ```
 
-#### 2. ROC-AUC Score & ROC Curve 📈
+#### 2. ROC-AUC Score & ROC Curve
 - **ROC-AUC Score**: Measures model's ability to distinguish classes
   - 0.5 = Random guessing
   - 0.7-0.8 = Good
@@ -125,7 +125,7 @@ Gradient Boosting: 🚀 Best accuracy, sequential learning
 ...
 ```
 
-### 🎯 Accuracy Improvements
+### Accuracy Improvements
 
 **Before (Version 1.0):**
 ```
@@ -161,7 +161,7 @@ Naive Bayes:              76-78%  (NEW)
    - Sequential learning corrects previous mistakes
    - Generally achieves 2-5% higher accuracy than Random Forest
 
-### 🔧 Technical Improvements
+### Technical Improvements
 
 #### 1. Robust Data Handling
 ```python
@@ -191,7 +191,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 st.form_submit_button(..., type="primary", use_container_width=True)
 ```
 
-### 📚 Updated Documentation
+### Updated Documentation
 
 **New Sections in README:**
 - Model comparison methodology
@@ -199,7 +199,7 @@ st.form_submit_button(..., type="primary", use_container_width=True)
 - Hyperparameter tuning guide
 - When to use which model
 
-### 🎓 Learning Outcomes
+### Learning Outcomes
 
 By using Version 2.0, you'll demonstrate:
 
@@ -209,15 +209,13 @@ By using Version 2.0, you'll demonstrate:
 4. **Production Thinking**: Model comparison and selection
 5. **Error Handling**: Robust preprocessing pipeline
 
-### 🚀 Quick Start (Updated)
+### Quick Start (Updated)
 
 ```bash
 # 1. Download all new files
 app.py
 requirements.txt
 README.md
-WINDOWS_QUICK_START.md
-ML_CONCEPTS_EXPLAINED.md
 
 # 2. Install/update dependencies
 pip install -r requirements.txt
@@ -233,26 +231,7 @@ python -m streamlit run app.py
    - Make predictions!
 ```
 
-### 🎯 Best Practices for Interviews
-
-**What to Say:**
-```
-"I built a comprehensive churn prediction system comparing 6 ML algorithms.
-After testing, I found Gradient Boosting achieved the best performance with
-84% accuracy and 0.856 ROC-AUC score. I used hyperparameter tuning to
-optimize Random Forest, improving it from 80% to 85% accuracy. The system
-handles imbalanced data using class weighting and provides model
-comparison tools for selecting the best algorithm."
-```
-
-**Technical Points:**
-1. ✅ "I implemented 6 different ML models"
-2. ✅ "I used cross-validation and ROC-AUC for robust evaluation"
-3. ✅ "I handled imbalanced data with class_weight='balanced'"
-4. ✅ "I optimized hyperparameters for production deployment"
-5. ✅ "I created a model comparison framework"
-
-### 📊 Model Selection Guide
+### Model Selection Guide
 
 **When to Use Each Model:**
 
@@ -265,7 +244,7 @@ comparison tools for selecting the best algorithm."
 | **Decision Tree** | Explainability | Easy to visualize | Prone to overfitting |
 | **Naive Bayes** | Baseline | Extremely fast | Assumes independence |
 
-### 🐛 Known Issues (Fixed)
+### Known Issues (Fixed)
 
 - ✅ Form submit button warning
 - ✅ String to float conversion error
@@ -274,7 +253,7 @@ comparison tools for selecting the best algorithm."
 - ✅ No ROC-AUC metric (now included)
 - ✅ No model comparison (now available)
 
-### 🔮 Future Enhancements (For v3.0)
+### Future Enhancements (For v3.0)
 
 1. **XGBoost Integration**
    ```python
@@ -312,7 +291,7 @@ comparison tools for selecting the best algorithm."
        return {"churn_probability": prob}
    ```
 
-### 📈 Performance Benchmarks
+### Performance Benchmarks
 
 **Tested on Standard Telco Dataset (7,043 customers):**
 
@@ -324,7 +303,7 @@ comparison tools for selecting the best algorithm."
 | Training Time | 5s | 8s | +3s |
 | Features | Basic | Advanced | ++ |
 
-### 💡 Tips for Best Results
+### Tips for Best Results
 
 1. **Always run model comparison first**
    - Identifies best algorithm for your data
@@ -346,31 +325,26 @@ comparison tools for selecting the best algorithm."
    - Understand what drives churn
    - Focus retention efforts
 
-### 🎉 Conclusion
+### Conclusion
 
 Version 2.0 is a **significant upgrade** that:
-- ✅ Fixes all bugs
-- ✅ Improves accuracy by 4-5%
-- ✅ Adds 4 new ML models
-- ✅ Provides model comparison
-- ✅ Enhances visualizations
-- ✅ Maintains beginner-friendly code
-
-**Ready for internship applications!** 🚀
+- Fixes all bugs
+- Improves accuracy by 4-5%
+- Adds 4 new ML models
+- Provides model comparison
+- Enhances visualizations
 
 ---
 
-## 📞 Support
+## Support
 
 If you encounter issues:
 
 1. Check you're using Python 3.8+
 2. Reinstall requirements: `pip install -r requirements.txt`
 3. Verify dataset format (must have 'Churn' column)
-4. Check WINDOWS_QUICK_START.md for troubleshooting
 
 ---
 
 **Version:** 2.0  
 **Last Updated:** February 2026  
-**Status:** Production Ready ✅
